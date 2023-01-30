@@ -215,14 +215,14 @@ class Home extends React.Component {
               </p>
 
               <p>
-                The range is from the years 2010 to 2020. The dashboard is
+                The range spans the years from 2010 to 2020. The dashboard is
                 separated into six groupings, which include Health, Energy,
                 Economy, Education, Climate and Quality of Life.
               </p>
 
               <p>
                 <strong>
-                  Roll over chart lines or click on the colors in the index to
+                  Roll over chart lines or click on the colors in the <i>YEARS</i> index to
                   isolate specific years.
                 </strong>
               </p>
