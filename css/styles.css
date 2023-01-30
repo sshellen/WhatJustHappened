@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 1200px;
+}
+.body {
+  background-color: #fff;
+}
+svg {
+  width: 600px;
+}
+
+.st0 {
+  fill: none;
+  stroke: #999999;
+}
+.st1 {
+  enable-background: new;
+}
+.st2 {
+  fill: #212121;
+}
+.st3 {
+  fill: none;
+}
+.st4 {
+  display: none;
+  fill: #990000;
+  fill-opacity: 0.3;
+  stroke: #ffffff;
+}
+.st5 {
+  display: none;
+  fill: none;
+}
+.st6 {
+  fill: none;
+  stroke: #f04e23;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.chartColumns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(240, 78, 75, 0.9);
+  padding: 0 30px;
+}
+.chartRow {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.chartRow .col {
+  width: 500px;
+}
+.chartRow .col svg {
+  width: 500px;
+}
+.years {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  width: 40px;
+}
+.years .palette {
+  width: 40px;
+  height: auto;
+  margin-top: 20px;
+}
+.yearList {
+  width: 40px;
+  box-sizing: border-box;
+  background-color: rgba(153, 153, 153, 0.15);
+}
+.yearList ul {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: center;
+  width: 40px;
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+.yearList ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.yearList ul li:hover {
+  color: #fff;
+  background-color: #f04e23;
+  cursor: pointer;
+}
+.chart {
+  margin-bottom: 30px;
+  height: 400px;
+}
+.chart .heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+
+.chart .heading h3 {
+  padding: 0;
+  margin: 0 0 0 auto;
+  text-align: right;
+  font-family: "Montserrat", sans;
+  font-weight: 700;
+  font-size: 21px;
+  color: #666;
+}
+
+.chart img {
+  height: 30px;
+}
+.yearHeading {
+  margin: 18px 0 0 0;
+}
+.chart .takeAways {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans;
+  font-size: 12px;
+  color: #333;
+}
+.chart .takeAways .left,
+.chart .takeAways .right {
+  width: 50%;
+}
+.chart .takeAways .left {
+  margin-right: 10px;
+}
+.chart .takeAways .right {
+  margin-left: 10px;
+}
+.chart .takeAways p {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.chart h2 {
+  padding: 0;
+  margin: 10px 0;
+  font-family: "Montserrat", sans;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+}
+.st6.y2010 {
+  stroke: #e29633;
+}
+.st6.y2011 {
+  stroke: #d18b2f;
+}
+.st6.y2012 {
+  stroke: #d1732f;
+}
+.st6.y2013 {
+  stroke: #d1622e;
+}
+.st6.y2014 {
+  stroke: #d14f2a;
+}
+.st6.y2015 {
+  stroke: #d13e25;
+}
+.st6.y2016 {
+  stroke: #d12924;
+}
+.st6.y2017 {
+  stroke: #b7204a;
+}
+.st6.y2018 {
+  stroke: #a51743;
+}
+.st6.y2019 {
+  stroke: #940955;
+}
+.st6.y2020 {
+  stroke: #700745;
+}
+.tip {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  background-color: #f04e23;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+.tip ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tip ul li {
+  padding-bottom: 5px;
+}
+.tip h3 {
+  padding: 0;
+  margin: 5px 0;
+}
+.palette {
+  width: 40px;
+}
+
+.palette .cls-1 {
+  fill: #940955;
+}
+.palette .cls-2 {
+  fill: #b7204a;
+}
+.palette .cls-3 {
+  fill: #333;
+}
+.palette .cls-4 {
+  fill: #d13e25;
+}
+.palette .cls-5 {
+  fill: #d12924;
+}
+.palette .cls-6 {
+  fill: #d1732f;
+}
+.palette .cls-7 {
+  fill: #d1622e;
+}
+.palette .cls-8 {
+  fill: #d18b2f;
+}
+.palette .cls-9 {
+  fill: #d14f2a;
+}
+.palette .cls-10 {
+  fill: #e29633;
+}
+.palette .cls-11 {
+  fill: #700745;
+}
+.palette .cls-12 {
+  fill: #a51743;
+}
+
+#intro {
+  margin: 80px 0 100px 0;
+}
+
+#infoButton .cls-1 {
+  fill: #f5faf4;
+}
+#infoButton .cls-2 {
+  fill: #f04e23;
+}
+.infoButton:hover #infoButton .cls-1 {
+  fill: #f04e23;
+}
+.infoButton:hover #infoButton .cls-2 {
+  fill: #212121;
+}
+
+.infoButton {
+  margin-top: 80px;
+  text-align: right;
+
+  cursor: pointer;
+}
+.infoButton #infoButton {
+  width: 35px;
+}
+
+#intro p {
+  font-family: "Montserrat", sans;
+  font-size: 14px;
+  color: #333;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(240, 78, 75, 0.9);
+  box-sizing: border-box;
+  align-items: center;
+}
+footer .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 1200px;
+
+  background-color: #fff;
+  border-top: #ccc dotted 1px;
+}
+footer .info div {
+  font-family: "Montserrat", sans;
+  width: 500px;
+  font-size: 12px;
+}
+footer .info div.right {
+  text-align: right;
+}
+footer .info .gutter {
+  width: 40px;
+}
+footer .info img {
+  width: 150px;
+}
+
+a,
+a.visited,
+a.active {
+  color: #4e79a7;
+  text-decoration: none;
+}
+a:hover,
+a.visited:hover,
+a.active:hover {
+  text-decoration: underline;
+}
+.chart img#lifeQualityHeading {
+  height: 36px;
+}
+.lightbox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: #fff;
+  color: #333;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Montserrat", sans;
+  width: 100%;
+  font-size: 14px;
+}
+.lightbox .content {
+  width: 1200px;
+  color: #333;
+  padding: 20px 40px;
+
+  box-sizing: border-box;
+  font-family: "Montserrat", sans;
+}
+
+.lightbox .dataSourcesTitle {
+  margin-bottom: 20px;
+  height: 30px;
+}
+.fixed {
+  position: fixed;
+}
+
+.lightbox .close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.lightbox .close img {
+  width: 30px;
+  height: 30px;
+}
+.dataSourcesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dataSourcesList li {
+  margin-bottom: 10px;
+}
