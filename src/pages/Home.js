@@ -211,7 +211,7 @@ class Home extends React.Component {
               <img src={title} alt="What just happened?" />
               <p>
                 The below dashboard gives a peek into what has happened in the
-                second decade of the new millenium.
+                second decade of the third millennium.
               </p>
 
               <p>
