@@ -53,20 +53,18 @@ class InfoBox extends React.Component {
                 alt="Data sources"
               />
               <ul className="dataSourcesList">
-                <li> Global Burden of Disease Collaborative Network.</li>
+               <li> Global Burden of Disease Collaborative Network.</li>
                 <li>
                   {" "}
                   Global Burden of Disease Study 2016 (GBD 2016) Results.
                 </li>
                 <li>
                   {" "}
-                  Institute for Health Metrics & Evaluation (IHME),
-                  2017.Worldbank
+                  Institute for Health Metrics & Evaluation (IHME), 2017.
                 </li>
                 <li> Worldbank</li>
                 <li>WHO</li>
                 <li>Our World in Data</li>
-                <li>Worldbank</li>
                 <li>Statista</li>
                 <li>BloombergNEF</li>
                 <li>ODI</li>
