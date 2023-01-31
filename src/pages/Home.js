@@ -379,8 +379,11 @@ class Home extends React.Component {
               <a href="#" onClick={this.openBox}>
                 View info on data sources
               </a>
-              <div style={{ marginTop: "10px" }}>
-                Visualization by Steinar Shellenberger
+             <div style={{ marginTop: "10px" }}>
+                Visualization by{" "}
+                <a href="http://www.blue-bee.com" target="_blank">
+                  Steinar Shellenberger
+                </a>
               </div>
             </div>
           </div>
