@@ -222,8 +222,8 @@ class Home extends React.Component {
 
               <p>
                 <strong>
-                  Roll over chart lines or click on the colors in the <i>YEARS</i> index to
-                  isolate specific years.
+                  Roll over chart lines or click on the colors in the{" "}
+                  <i>YEARS</i> index to isolate specific years.
                 </strong>
               </p>
             </div>
@@ -241,8 +241,9 @@ class Home extends React.Component {
                   <img src={healthHeading} alt="Health" />
                   <h3>{this.state.healthYear}</h3>
                 </div>
-                <HealthChart highlight={this.highlight} />
-                <h2>OBSERVATIONS</h2>
+                <div className="chartSVG">
+                  <HealthChart highlight={this.highlight} />
+                </div>
                 <div className="takeAways">
                   <div className="left">
                     <p> 2010 and 2020 saw a lot of incidences of Polio.</p>
@@ -262,17 +263,24 @@ class Home extends React.Component {
                   <img src={energyHeading} alt="Energy" />
                   <h3>{this.state.energyYear}</h3>
                 </div>
+                <div className="chartSVG">
+                  <EnergyChart />
+                </div>
 
-                <EnergyChart />
-                <h2>OBSERVATIONS</h2>
                 <div className="takeAways">
                   <div className="left">
+                    <p>
+                      <i style={{ fontSize: "11px" }}>
+                        GEP = Global Electricity Production
+                      </i>
+                    </p>
+                  </div>
+                  <div className="right">
                     <p>
                       Renewable energy use has been steadily increasing over the
                       last decade.
                     </p>
                   </div>
-                  <div className="right"></div>
                 </div>
               </div>
               <div className="chart" id="climate">
@@ -280,9 +288,9 @@ class Home extends React.Component {
                   <img src={climateHeading} alt="Climate" />
                   <h3>{this.state.climateYear}</h3>
                 </div>
-
-                <ClimateChart />
-                <h2>OBSERVATIONS</h2>
+                <div className="chartSVG">
+                  <ClimateChart />
+                </div>
                 <div className="takeAways">
                   <div className="left">
                     <p>Electric car sales have increased.</p>
@@ -306,9 +314,10 @@ class Home extends React.Component {
                   <img src={economyHeading} alt="Economy" />
                   <h3>{this.state.economyYear}</h3>
                 </div>
+                <div className="chartSVG">
+                  <EconomyChart />
+                </div>
 
-                <EconomyChart />
-                <h2>OBSERVATIONS</h2>
                 <div className="takeAways">
                   <div className="left">
                     <p>
@@ -326,9 +335,9 @@ class Home extends React.Component {
                   <img src={educationHeading} alt="Education" />
                   <h3>{this.state.educationYear}</h3>
                 </div>
-
-                <EducationChart />
-                <h2>OBSERVATIONS</h2>
+                <div className="chartSVG">
+                  <EducationChart />
+                </div>
                 <div className="takeAways">
                   <div className="left">
                     <p>Mostly positive changes across the board over time.</p>
@@ -350,9 +359,10 @@ class Home extends React.Component {
                   />
                   <h3>{this.state.lifeQualityYear}</h3>
                 </div>
+                <div className="chartSVG">
+                  <QualityOfLife />
+                </div>
 
-                <QualityOfLife />
-                <h2>OBSERVATIONS</h2>
                 <div className="takeAways">
                   <div className="left">
                     <p>Access to the internet has increased globally.</p>
@@ -379,7 +389,7 @@ class Home extends React.Component {
               <a href="#" onClick={this.openBox}>
                 Info on data sources
               </a>
-             <div style={{ marginTop: "10px" }}>
+              <div style={{ marginTop: "10px" }}>
                 Visualization by{" "}
                 <a href="http://www.blue-bee.com" target="_blank">
                   Steinar Shellenberger
