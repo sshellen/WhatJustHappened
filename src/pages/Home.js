@@ -377,7 +377,7 @@ class Home extends React.Component {
             <div className="gutter"></div>
             <div className="right">
               <a href="#" onClick={this.openBox}>
-                View info on data sources
+                Info on data sources
               </a>
              <div style={{ marginTop: "10px" }}>
                 Visualization by{" "}
